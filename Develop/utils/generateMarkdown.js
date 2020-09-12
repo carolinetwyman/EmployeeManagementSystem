@@ -15,13 +15,13 @@ function generateMarkdown(data) {
 * [Questions](#questions)
 
 ## Description
-${data.idnumber}
+${data.id}
 
 ## Installation Instructions
 ${data.email}
 
 ## Usage Information
-${data.employeetype}
+${data.employeeType}
 
 ## License
 ${data.license}

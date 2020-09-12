@@ -111,35 +111,44 @@ async function askQuestions() {
         while (moreEmployees) {
 
             const answer = await inquirer.prompt(employeeQ);
-            
+
 
             switch (answer.employeeType) {
                 case "Manager": {
                     const managerA = await inquirer.prompt(managerQ);
-                    answer.moreAnswers = managerA;
+                    // console.log("test", answer, managerA)
+                    const newManager = new Manager(answer.name, answer.id, answer.email, managerA.officeNumber);
+                    employees.push(newManager);
+                    //answer.moreAnswers = managerA;
                     break;
                 }
                 case "Intern": {
                     const internA = await inquirer.prompt(internQ);
-                    answer.moreAnswers = internA;
+                    const newIntern = new Intern(answer.name,answer.id,answer.email,internA.school);
+                    employees.push(newIntern);
+                    //answer.moreAnswers = internA;
                     break;
                 }
                 case "Engineer": {
                     const engineerA = await inquirer.prompt(engineerQ);
-                    answer.moreAnswers = engineerA;
+                    const newEngineer = new Engineer(answer.name,answer.id,answer.email,engineerA.github);
+                    employees.push(newEngineer);
+                    //answer.moreAnswers = engineerA;
                     break;
                 }
             }
-            
-            employees.push(answer);
 
-            const moreEmployeesObject =  await inquirer.prompt(moreQ);
+            // employees.push(answer);
+
+            const moreEmployeesObject = await inquirer.prompt(moreQ);
+
 
 
             moreEmployees = moreEmployeesObject.more;
         }
 
-        console.log(employees);
+
+        return employees;
 
 
     }
@@ -148,4 +157,22 @@ async function askQuestions() {
     }
 }
 
-askQuestions();
+async function buildHTML() {
+
+
+    const employees = await askQuestions();
+
+    console.log("test", employees)
+    const outputHTML = await render(employees)
+
+    fs.writeFile("./templates/team.html", outputHTML, function (err) {
+        if (err) {
+            return console.log(err);
+        }
+        else {
+            console.log("HTML Generated");
+        }
+    });
+}
+
+buildHTML();
