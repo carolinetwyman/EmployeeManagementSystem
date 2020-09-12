@@ -44,20 +44,20 @@ const employeeQ = [
     },
     {
         type: "input",
-        name: "idnumber",
-        message: "please enter the employee's id number",
+        name: "id",
+        message: "Please enter the employee's id number",
         type: "string"
     },
     {
         type: "input",
         name: "email",
-        message: "please enter the employee's email address",
+        message: "Please enter the employee's email address",
         type: "string"
     },
     {
         type: "list",
         name: "employeeType",
-        message: "This person is what type of employee?",
+        message: "What type of employee is this person?",
         choices: [
             "Manager",
             "Intern",
