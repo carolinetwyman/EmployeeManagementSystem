@@ -42,3 +42,5 @@ Contact me:
 
 Github: [https://github.com/carolinetwyman](https://github.com/carolinetwyman)
 Email: [carolinetwyman@gmail.com](carolinetwyman@gmail.com)
+
+For more of my projects, please see my [portfolio](https://carolinetwyman.github.io/PortfolioCaroline/portfolio.html)
