@@ -19,6 +19,9 @@ This Project is a dynamic CLI app designed to create employee profiles for an or
 To install the app, you must clone the repository to your local device.
 
 ## Usage Information
+
+For a walkthrough please visit [my YouTube](https://www.youtube.com/watch?v=eGrjobAvOo8&feature=youtu.be&ab_channel=Caroline)
+
 To use the app, enter the Develop Directory and type the command "node app" or "node app.js." 
 
 ![project image](./imgs/prompts.png)
@@ -26,8 +29,6 @@ To use the app, enter the Develop Directory and type the command "node app" or "
 To run tests, from the same location, type the command "npm test."
 
 ![project image](./imgs/jest.png)
-
-For a walkthrough please visit: [https://www.youtube.com/watch?v=eGrjobAvOo8&feature=youtu.be&ab_channel=Caroline](https://www.youtube.com/watch?v=eGrjobAvOo8&feature=youtu.be&ab_channel=Caroline)
 
 
 ## License
