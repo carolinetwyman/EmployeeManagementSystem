@@ -116,37 +116,28 @@ async function askQuestions() {
             switch (answer.employeeType) {
                 case "Manager": {
                     const managerA = await inquirer.prompt(managerQ);
-                    // console.log("test", answer, managerA)
                     const newManager = new Manager(answer.name, answer.id, answer.email, managerA.officeNumber);
                     employees.push(newManager);
-                    //answer.moreAnswers = managerA;
                     break;
                 }
                 case "Intern": {
                     const internA = await inquirer.prompt(internQ);
                     const newIntern = new Intern(answer.name,answer.id,answer.email,internA.school);
                     employees.push(newIntern);
-                    //answer.moreAnswers = internA;
                     break;
                 }
                 case "Engineer": {
                     const engineerA = await inquirer.prompt(engineerQ);
                     const newEngineer = new Engineer(answer.name,answer.id,answer.email,engineerA.github);
                     employees.push(newEngineer);
-                    //answer.moreAnswers = engineerA;
                     break;
                 }
             }
 
-            // employees.push(answer);
-
             const moreEmployeesObject = await inquirer.prompt(moreQ);
-
-
 
             moreEmployees = moreEmployeesObject.more;
         }
-
 
         return employees;
 
