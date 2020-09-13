@@ -27,6 +27,8 @@ To run tests, from the same location, type the command "npm test."
 
 ![project image](./imgs/jest.png)
 
+For a walkthrough please visit: [https://www.youtube.com/watch?v=eGrjobAvOo8&feature=youtu.be&ab_channel=Caroline](https://www.youtube.com/watch?v=eGrjobAvOo8&feature=youtu.be&ab_channel=Caroline)
+
 
 ## License
 ISC
