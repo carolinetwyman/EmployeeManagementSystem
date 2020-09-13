@@ -112,7 +112,6 @@ async function askQuestions() {
 
             const answer = await inquirer.prompt(employeeQ);
 
-
             switch (answer.employeeType) {
                 case "Manager": {
                     const managerA = await inquirer.prompt(managerQ);
@@ -153,7 +152,6 @@ async function buildHTML() {
 
     const employees = await askQuestions();
 
-    console.log("test", employees)
     const outputHTML = await render(employees)
 
     fs.writeFile("./templates/team.html", outputHTML, function (err) {
