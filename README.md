@@ -2,7 +2,7 @@
   
 # Employee Management System
 
-![project image](./imgs/inaction.png)
+![project image](./imgs/deployed.png)
 
 ## Table of Contents
 * [Description](#description)
@@ -19,7 +19,14 @@ This Project is a dynamic CLI app designed to create employee profiles for an or
 To install the app, you must clone the repository to your local device.
 
 ## Usage Information
-To use the app, enter the Develop Directory and type the command "node app" or "node app.js."
+To use the app, enter the Develop Directory and type the command "node app" or "node app.js." 
+
+![project image](./imgs/prompts.png)
+
+To run tests, from the same location, type the command "npm test."
+
+![project image](./imgs/jest.png)
+
 
 ## License
 ISC

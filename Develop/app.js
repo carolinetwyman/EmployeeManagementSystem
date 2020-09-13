@@ -69,7 +69,7 @@ const employeeQ = [
 const managerQ = [
     {
         type: "input",
-        name: "officenum",
+        name: "officeNumber",
         message: "What is the manager's office number?",
         type: "string"
     }
